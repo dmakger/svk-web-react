@@ -1,4 +1,10 @@
 @font-face {
+	font-family: "Gotham-black";
+	src: url("core/static/font/Gotham/Gotham-Black.ttf");
+	font-display: swap;
+}
+
+@font-face {
 	font-family: "Gotham-Bold";
 	src: url("core/static/font/Gotham/Gotham-Bold.ttf");
 	font-display: swap;

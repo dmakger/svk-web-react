@@ -55,3 +55,7 @@ $orange_20: rgba($orange, 0.2);
 $dark-orange: #523821;
 
 $blue-dark-1-to-black: linear-gradient(90deg, $blue-dark-1 0%, $black 100%);
+
+$_pink: #CD55CB;
+$_red: #E7353E;
+$blue-to-pred: linear-gradient(90deg, $blue 0%, $_pink 52.60%, $_red 100%);

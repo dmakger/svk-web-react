@@ -1,0 +1,24 @@
+@import "../../../scss/_vars.scss";
+
+.link {
+	display: flex;
+	padding: 10px 20px;
+	border-radius: 10px;
+	transition: all .2s;
+
+	.title {
+		text-transform: uppercase;
+		color: $white;
+	}
+
+	&:hover {
+		background-color: $white;
+
+		.title {
+			background: $blue-to-pred;
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+}
