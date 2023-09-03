@@ -1,0 +1,57 @@
+// ===========
+// Font style
+// ===========
+$f-black: 'Gotham-Black', sans-serif;
+$f-bold: 'Gotham-Bold', sans-serif;
+$f-bold-italic: 'Gotham-BoldItalic', sans-serif;
+$f-medium: 'Gotham-Medium', sans-serif;
+$f-medium-italic: 'Gotham-MediumItalic', sans-serif;
+$f-book: 'Gotham-Book', sans-serif;
+$f-book-italic: 'Gotham-BookItalic', sans-serif;
+
+// ===========
+// Font size
+// ===========
+$fs-96: 96px;
+$fs-64: 64px;
+$fs-48: 48px;
+$fs-40: 40px;
+$fs-36: 36px;
+$fs-32: 32px;
+$fs-24: 24px;
+$fs-20: 20px;
+$fs-16: 16px;
+$fs-15: 15px;
+
+// ===========
+// Color
+// ===========
+$white: #FFF;
+$black: #000;
+
+$black-light-1: #1A1A1A;
+$black-light-2: #242424;
+$black-light-3: #3C3A3A;
+$black-light-4: #717171;
+
+$gray-1: #9E9EA7;
+$gray-2: #EBEBEB;
+
+$empty: #00000000;
+
+$red: #FF5252;
+$red-light: #FF5252;
+
+$green: #01EE90;
+$green-light: #E6FEF4;
+
+$blue: #4655FF;
+$blue-dark-1: #171935;
+$blue-dark-2: #242857;
+$blue-dark-3: #313677;
+
+$orange: #FB7904;
+$orange_20: rgba($orange, 0.2);
+$dark-orange: #523821;
+
+$blue-dark-1-to-black: linear-gradient(90deg, $blue-dark-1 0%, $black 100%);
