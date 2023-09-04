@@ -4,11 +4,13 @@
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	padding: 40px 0;
+	padding: 40px 10px;
 
 	.content {
 		max-width: $elg-desktop-width;
 		display: flex;
 		width: 100%;
+		justify-content: space-between;
+		align-items: center;
 	}
 }

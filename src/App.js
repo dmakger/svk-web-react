@@ -1,14 +1,15 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import './App.css';
 
 import MainPage from './main/main/MainPage';
+import MainWrapper from './main/core/wrapper/MainWrapper';
 
 function App() {
 	return (
 		<BrowserRouter>
-			<Routes>
+			<MainWrapper>
 				<Route path="/" element={<MainPage />} />
-			</Routes>
+			</MainWrapper>
 		</BrowserRouter>
 	);
 }

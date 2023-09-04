@@ -1,0 +1,14 @@
+@import '../../../../../../../../../../../../../core/scss/vars';
+
+.list {
+	display: flex;
+	background-color: $blue-dark-2;
+	border-radius: 20px;
+	padding: 20px 30px;
+
+	.item {
+		&:nth-child(n+2) {
+			margin-left: 20px;
+		}
+	}
+}
