@@ -1,15 +1,20 @@
 import React from 'react';
 import Text24B from '../../../../../../../../../../core/ui/text/24/Text24B';
 import Text20M from '../../../../../../../../../../core/ui/text/20/Text20M';
-import cl from './core'
+import cl from './_FooterNavItem.module.scss'
+import { Link } from 'react-router-dom';
 
-const FooterNavItem = ({ title, content }) => {
+const FooterNavItem = ({ path, title, content, className, ...props }) => {
+	const parentURL = path === null ? '' : `${path}/`
+
 	return (
-		<div>
+		<div className={className} {...props}>
 			<Text24B className={cl.title}>{title}</Text24B>
 			<div className={cl.content}>
 				{content.map(it => (
-					<Text20M key={it.path}>{it.title}</Text20M>
+					<Link key={it.path} to={`${parentURL}${it.path}`}>
+						<Text20M>{it.title}</Text20M>
+					</Link>
 				))}
 			</div>
 		</div>
