@@ -10,7 +10,6 @@ import { fetchTOC } from './core/actions/toc';
 const MainWrapper = ({ children }) => {
 	const dispatch = useDispatch();
 	useEffect(() => {
-		// Вызываем запрос к API при монтировании компонента
 		dispatch(fetchTOC())
 	}, [dispatch]);
 
