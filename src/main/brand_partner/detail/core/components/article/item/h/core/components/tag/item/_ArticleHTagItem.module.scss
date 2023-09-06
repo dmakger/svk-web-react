@@ -1,0 +1,11 @@
+@import '../../../../../../../../../../../../core/scss/vars';
+
+.tag {
+    padding: 12px 15px 10px 15px;
+    border-radius: 10px;
+    background-color: $blue-dark-3;
+
+    .title {
+        text-transform: uppercase;
+    }
+}

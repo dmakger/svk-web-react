@@ -14,7 +14,6 @@ const FooterNavList = ({ className, ...props }) => {
 					title={it.title}
 					path={it.path}
 					content={it.pages}
-				// className={}
 				/>
 			))}
 		</div>
@@ -41,7 +40,6 @@ const getNavigationList = (data) => {
 			result.push(nav)
 		}
 	}
-	console.log(result)
 	return result
 }
 

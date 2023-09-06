@@ -1,0 +1,47 @@
+@import '../../../../../../../../core/scss/vars';
+
+.block {
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    .image {
+        height: 330px;
+        border-radius: 20px;
+        display: flex;
+    }
+
+
+    .content {
+        margin-left: 60px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        .tags {
+            margin-top: 30px;
+        }
+
+        .text {
+            margin: auto 0;
+
+            .description {
+                color: $white;
+                margin-top: 7px;
+                font-family: $f-book;
+                font-size: $fs-24;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+
+        }
+
+        .date {
+            color: $gray-1;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+    }
+}

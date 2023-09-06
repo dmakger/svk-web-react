@@ -1,0 +1,26 @@
+@import '../../../../../../core/scss/vars';
+
+.header {
+    display: flex;
+
+    .image {
+        height: 160px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 50px;
+
+        .description {
+            font-family: $f-medium;
+            font-size: $fs-24;
+            margin-top: 10px;
+        }
+
+        .link {
+            margin-top: 5px;
+        }
+    }
+}

@@ -18,9 +18,9 @@ export function getParams(params) {
 		return ''
 
 	let paramsStr = []
-	for (let key in params)
-		if (params[key] !== undefined && params[key] !== null)
-			paramsStr.push(`${key}=${params[key]}`)
+	for (let param of params)
+		if (param !== undefined && param !== null)
+			paramsStr.push(`${param[0]}=${param[1]}`)
 	if (paramsStr.length)
 		return `?${paramsStr.join('&')}`
 	return paramsStr

@@ -1,0 +1,24 @@
+@import '../../../../../../../../../../../core/scss/vars';
+
+.block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 24px 16px !important;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .date {
+            color: $gray-1;
+            margin-right: 10px;
+        }
+    }
+
+    .title {
+        margin: 20px 10px 0;
+    }    
+}

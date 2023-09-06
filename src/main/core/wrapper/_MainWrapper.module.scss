@@ -1,0 +1,11 @@
+@import '../../../core/scss/mixins/media';
+
+.main {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+
+    max-width: $elg-desktop-width;
+    width: 100%;
+    padding: 0 10px;
+}

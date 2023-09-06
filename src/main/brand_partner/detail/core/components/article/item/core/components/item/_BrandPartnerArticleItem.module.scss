@@ -1,0 +1,25 @@
+@import '../../../../../../../../../../core/scss/vars';
+
+.block {
+    background-color: $blue-dark-2;
+    border-radius: 20px;
+    padding: 30px;
+    border: 2px solid $blue-dark-2;
+    transition: all .2s;
+
+    &:hover {
+        border-color: $white;
+    }
+
+
+    .image {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .content {
+        margin-right: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+}

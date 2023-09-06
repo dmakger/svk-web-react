@@ -1,0 +1,40 @@
+@import '../../../../../../../../../../../core/scss/vars';
+
+.block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height: 510px;
+
+    .image {
+        border-radius: 20px;
+    }
+
+    .content {
+        margin-top: 20px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .text {
+            margin-top: 20px;;
+
+            .description {
+                color: $white;
+                margin-top: 7px;
+                font-family: $f-book;
+                font-size: $fs-24;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+        }
+
+        .date {
+            color: $gray-1;
+            margin-top: auto;
+        }
+    }
+}
