@@ -1,0 +1,11 @@
+@import '../../../../../../../../../../../../../../../../../../core/scss/vars';
+
+.block {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+
+	.active {
+		color: $black-light-4;
+	}
+}

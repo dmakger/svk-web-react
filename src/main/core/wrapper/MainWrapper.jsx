@@ -6,6 +6,7 @@ import cl from './_MainWrapper.module.scss'
 import TopBar from './core/components/topbar/TopBar';
 import Footer from './core/components/footer/Footer';
 import { fetchTOC } from './core/actions/toc';
+import ApplicationLink from './core/components/application/ApplicationLink';
 
 
 const MainWrapper = ({ children }) => {
@@ -22,6 +23,7 @@ const MainWrapper = ({ children }) => {
 					{children}
 				</Routes>
 			</main>
+			<ApplicationLink className={cl.application} />
 			<Footer />
 		</>
 	);

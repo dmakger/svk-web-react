@@ -6,11 +6,13 @@ import MainPage from './main/main/MainPage';
 import BrandPartnerPage from './main/brand_partner/this/BrandPartnerPage';
 import BrandPartnerDetailPage from './main/brand_partner/detail/BrandPartnerDetailPage';
 import { MAIN_URL, BRAND_PARTNER_URL, ARTICLE_URL } from './core/service/urls';
+import ScrollToTop from './core/service/ScrollToTop';
 import ArticlePage from './main/article/brand/ArticlePage';
 
 function App() {
 	return (
 		<BrowserRouter>
+			<ScrollToTop />
 			<MainWrapper>
 				<Route path={MAIN_URL} element={<MainPage />} />
 
