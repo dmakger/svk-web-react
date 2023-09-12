@@ -1,0 +1,13 @@
+.content {
+    display: flex;
+    margin-bottom: 100px;
+
+    .toc {
+        min-width: 280px;
+        margin-left: 50px;
+    }
+
+    .tocItem {
+        display: flex;
+    }
+}

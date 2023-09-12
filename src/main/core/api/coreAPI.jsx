@@ -10,7 +10,7 @@ export async function getBrandPartners(params) {
 	return await request('GET', url)
 }
 
-// DETAIL PAGE
+// BRAND PARTNERS
 export async function getBrandPartnersHeader(path, params) {
 	const url = `${CORE_URL_API}/brand_partners/${path}/${getParams(params)}`
 	return await request('GET', url)
@@ -18,5 +18,10 @@ export async function getBrandPartnersHeader(path, params) {
 
 export async function getBrandPartnersArticleList(path, params) {
 	const url = `${CORE_URL_API}/brand_partners/${path}/article/${getParams(params)}`
+	return await request('GET', url)
+}
+
+export async function getBrandArticle(path, params) {
+	const url = `${CORE_URL_API}/article/${path}/${getParams(params)}`
 	return await request('GET', url)
 }

@@ -4,8 +4,11 @@
     display: flex;
     margin: 0 auto;
     justify-content: center;
+    // margin-top: 140px;
 
     max-width: $elg-desktop-width;
     width: 100%;
     padding: 0 10px;
+
+    min-height: 80vh;
 }

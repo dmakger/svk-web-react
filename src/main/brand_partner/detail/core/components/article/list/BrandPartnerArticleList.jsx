@@ -4,6 +4,7 @@ import cl from './_BrandPartnerArticleList.module.scss'
 import BrandPartnerArticleItemAuto from '../item/auto/BrandPartnerArticleItemAuto';
 import BrandPartnerArticleItemH from '../item/h/BrandPartnerArticleItemH';
 import { getData, getIndexMain } from './core/service/architecture';
+import Loading from '../../../../../../../core/ui/loading/Loading';
 
 const BrandPartnerArticleList = ({path, className, ...props}) => {
     const [main, setMain] = useState(null);
@@ -34,7 +35,7 @@ const BrandPartnerArticleList = ({path, className, ...props}) => {
                                         image={main.preview_image}
                                         tags={main.tags}
                                         dateAt={main.date_at}/>
-            : null
+            : <Loading />
             }
             <div className={cl.list}>
                 {data.map(it => (

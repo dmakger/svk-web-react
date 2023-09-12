@@ -1,0 +1,11 @@
+@import '../../../../../../../../../../../../../../../../core/scss/vars';
+
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .title {
+        color: $gray-1;   
+    }
+}

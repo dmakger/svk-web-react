@@ -4,6 +4,7 @@ import BrandPartnerArticleItem from '../../../../core/components/item/BrandPartn
 import { ARTICLE_URL } from '../../../../../../../../../../../core/service/urls';
 import { getDate } from '../../../../../../../../../../../core/service/date';
 import Text20M from '../../../../../../../../../../../core/ui/text/20/Text20M';
+import Text24M from '../../../../../../../../../../../core/ui/text/24/Text24M';
 import ArticleTagList from '../core/components/tag/list/ArticleTagList';
 import { getImage } from '../../../../../../../../../../../core/service/image';
 
@@ -15,7 +16,7 @@ const BrandPartnerArticleItemV = ({path, title, description, image, dateAt, tags
             <div className={cl.content}>
                 <ArticleTagList list={tags} className={cl.tags} />
                 <div className={cl.text}>
-                    <Text20M>{title}</Text20M>
+                    <Text24M>{title}</Text24M>
                     <p className={cl.description} dangerouslySetInnerHTML={{__html: description}} />
                 </div>
                 <Text20M className={cl.date}>{getDate(dateAt)}</Text20M>
