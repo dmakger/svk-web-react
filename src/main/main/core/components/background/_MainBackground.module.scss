@@ -1,0 +1,17 @@
+@import '../../../../../core/scss/vars';
+
+.background {
+    position: absolute;
+    // background: linear-gradient(180deg, $blue-dark-1 0%, #000 100%, #000 100%);
+
+    .redBall {
+        margin-left: 857px;
+    }
+
+    .purpleBall {
+        position: absolute;
+        top: 498px;
+        right: 314px;
+    }
+
+}

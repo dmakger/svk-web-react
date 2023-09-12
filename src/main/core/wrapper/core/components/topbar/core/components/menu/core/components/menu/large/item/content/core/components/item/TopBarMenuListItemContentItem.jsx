@@ -1,7 +1,7 @@
 import React from 'react';
 import cl from './_TopBarMenuListItemContentItem.module.scss';
 import { Link } from 'react-router-dom';
-import Text16B from '../../../../../../../../../../../../../../../../../core/ui/text/16/Text16B';
+import Text16B from '../../../../../../../../../../../../../../../../../../core/ui/text/16/Text16B';
 
 const TopBarMenuListItemContentItem = ({ url, title, className, ...props }) => {
 	return (

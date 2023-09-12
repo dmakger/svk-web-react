@@ -1,11 +1,11 @@
 @import '../../../../../../../../../../../../../../../../../core/scss/vars';
 
-.block {
-	display: flex;
-	align-items: center;
-	gap: 6px;
+.title {
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all .2s;
 
-	.active {
+	&:hover {
 		color: $black-light-4;
 	}
 }

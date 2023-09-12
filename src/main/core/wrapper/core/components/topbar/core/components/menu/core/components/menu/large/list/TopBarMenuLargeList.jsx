@@ -1,11 +1,8 @@
 import React from 'react';
 import TopBarMenuListItemAuto from '../item/auto/TopBarMenuListItemAuto';
-import cl from './_TopBarMenuList.module.scss';
-import { useSelector } from 'react-redux';
-import { selectMenuData } from '../../../../../../../../../selectors/menu';
+import cl from './_TopBarMenuLargeList.module.scss';
 
-const TopBarMenuList = () => {
-	const menuData = useSelector(selectMenuData);
+const TopBarMenuList = ({menuData}) => {
 	return (
 		<div className={cl.list}>
 			{menuData.map(it => (
