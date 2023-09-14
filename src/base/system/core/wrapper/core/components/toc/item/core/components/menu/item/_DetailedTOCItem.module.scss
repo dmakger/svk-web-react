@@ -1,0 +1,14 @@
+@import "src/core/scss/vars";
+
+.item {
+  color: $gray-1;
+  transition: all .2s;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.active {
+  color: $blue;
+}

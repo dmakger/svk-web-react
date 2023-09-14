@@ -1,0 +1,22 @@
+@import '../../../../../../../core/scss/mixins/media';
+
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 40px 10px;
+	// position: fixed;
+
+	.content {
+		max-width: $elg-desktop-width;
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+/* Large devices | 1200px or less */
+@include lg-desktop {
+	
+}

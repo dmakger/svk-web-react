@@ -1,0 +1,12 @@
+@import '../../../../../../../../../../../../../../../../../../../core/scss/vars';
+
+.title {
+	padding: 10px 12px;
+	border-radius: 10px;
+	white-space: nowrap;
+	transition: all .2s;
+
+	&:hover {
+		background-color: $blue-dark-3;
+	}
+}

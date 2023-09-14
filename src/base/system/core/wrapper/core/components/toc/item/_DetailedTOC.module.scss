@@ -1,0 +1,44 @@
+@import "src/core/scss/vars";
+
+.toc {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .header {
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5px 10px 6px 10px;
+    transition: all .2s;
+    background-color: $blue-dark-1;
+
+    &:hover {
+      background-color: $blue-dark-3;
+    }
+
+    .arrow {
+      margin-left: auto;
+      width: 18px;
+      height: 18px;
+      transition: all .2s;
+    }
+  }
+
+  .content {
+    display: flex;
+    gap: 20px;
+
+    .line {
+      width: 1px;
+      background-color: $blue;
+      margin-left: 10px;
+    }
+  }
+}
+
+.active {
+  .header .arrow {
+    rotate: 180deg;
+  }
+}

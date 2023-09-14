@@ -1,0 +1,27 @@
+@import "src/core/scss/vars";
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  padding: 20px 50px 20px 30px;
+  border-radius: 20px;
+  background-color: $blue-dark-2;
+  transition: all .2s;
+
+  &:hover {
+    background-color: $blue-dark-3;
+  }
+
+  .image {
+    width: 200px;
+  }
+
+  .description {
+    font-family: $f-book;
+    font-size: $fs-24;
+    color: $white;
+    margin-top: 15px;
+  }
+}

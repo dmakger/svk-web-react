@@ -1,0 +1,13 @@
+@import '../../../../../../../core/scss/vars';
+
+.footer {
+	background-color: $black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 75px 0;
+
+	.list {
+		margin-top: 100px;
+	}
+}
