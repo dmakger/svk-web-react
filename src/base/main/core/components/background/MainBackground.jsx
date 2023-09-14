@@ -1,6 +1,5 @@
 import React from 'react';
 import cl from './_MainBackground.module.scss'
-import oSVG from '../../static/o.svg'
 import redBallSVG from '../../static/red-ball.svg'
 import purpleBallSVG from '../../static/purple-ball.svg'
 

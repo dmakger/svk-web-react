@@ -31,7 +31,7 @@ const getNavigationList = (data) => {
 	}]
 
 	for (let nav of data) {
-		if (nav.pages.length === 0 || nav.pages === undefined) {
+		if (nav.pages.length === 0) {
 			result[0].pages.push({
 				title: nav.title,
 				path: nav.path,

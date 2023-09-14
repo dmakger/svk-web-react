@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const BrandPartnersItem = ({title, path, image, className, ...props}) => {
     return (
-        <Link to={`./${path}`} className={`${cl.block} ${className}`}>
+        <Link to={`./${path}`} className={`${cl.block} ${className}`} {...props}>
             <div className={cl.imageWrapper}>
                 <img alt={'Логотип бренда'} src={`${GLOBAL_URL}/${image}`} className={cl.image} />
             </div>
