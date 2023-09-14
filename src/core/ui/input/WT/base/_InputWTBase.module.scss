@@ -1,0 +1,17 @@
+@import '../../../../scss/vars';
+
+.input {
+    outline: none;
+    font-family: $f-book;
+    font-size: $fs-24;
+    border-radius: 10px;
+    padding: 15px 20px;
+    background-color: $white;
+    color: $black;
+    border: 2px solid $white;
+    transition: all .2s;
+
+    &:focus {
+        border: 2px solid $blue;
+    }
+}

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import cl from './_ArticleContentText.module.scss';
 import clLink from '../../../../../../../../../../core/scss/_link.module.scss';
+import clH2 from '../../../../../../../../../../core/scss/_h2.module.scss';
 import ArticleImage from './core/components/image/ArticleImage';
 import {getImage} from "../../../../../../../../../../../core/service/image";
 
@@ -31,7 +32,7 @@ const ArticleContentText = ({image, content, className, ...props}) => {
     return (
         <div {...props}>
             <ArticleImage image={image} />
-            <p className={`${cl.content} ${clLink.content}`} dangerouslySetInnerHTML={{__html: contentWithPrefix}} />
+            <p className={`${cl.content} ${clLink.content} ${clH2.content}`} dangerouslySetInnerHTML={{__html: contentWithPrefix}} />
         </div>
     );
 };

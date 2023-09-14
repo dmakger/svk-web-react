@@ -1,0 +1,5 @@
+export const ROW_TYPE = 'row'
+export const TEXT_TYPE = 'text'
+export const TEL_TYPE = 'tel'
+export const EMAIL_TYPE = 'email'
+export const CHECKBOX_TYPE = 'checkbox'

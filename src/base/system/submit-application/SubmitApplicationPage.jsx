@@ -3,23 +3,22 @@ import ArticleSystem from "../../article/system/ArticleSystem";
 import {useDispatch, useSelector} from "react-redux";
 import {selectSystemPageData} from "../../../core/reducer/systemPageReducer";
 import {setToc} from "../../../core/reducer/tocReducer";
-import {__BRAND_SUPPORT_URL, _ABOUT_BRAND_URL} from "../../../core/service/urls";
+import {_FOR_BUSINESS_URL, __STATEMENT_APPLICATION_URL} from "../../../core/service/urls";
 import {fetchSystemPage} from "../../../core/reducer/actions";
 import Loading from "../../../core/ui/loading/Loading";
-import BrandSupport from "./core/components/brand-support/BrandSupport";
-import cl from './_BrandSupportPage.module.scss';
+import SubmitApplication from './core/components/SubmitApplication';
 
-const BrandSupportPage = () => {
+const SubmitApplicationPage = () => {
     const [article, setArticle] = useState(null);
     const systemPageData = useSelector(selectSystemPageData);
 
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchSystemPage(__BRAND_SUPPORT_URL))
+        dispatch(fetchSystemPage(__STATEMENT_APPLICATION_URL))
         dispatch(setToc({
-            parent: _ABOUT_BRAND_URL,
-            child: __BRAND_SUPPORT_URL,
+            parent: _FOR_BUSINESS_URL,
+            child: __STATEMENT_APPLICATION_URL,
         }))
     }, [dispatch]);
 
@@ -33,8 +32,9 @@ const BrandSupportPage = () => {
         <>
             {article
                 ? (
-                    <ArticleSystem title={article.title} description={article.description} classNameContent={cl.content}>
-                        <BrandSupport />
+                    <ArticleSystem title={article.title} 
+                                    description={article.description} >
+                        <SubmitApplication />
                     </ArticleSystem>
                 )
                 : <Loading />
@@ -43,4 +43,4 @@ const BrandSupportPage = () => {
     );
 };
 
-export default BrandSupportPage;
+export default SubmitApplicationPage;

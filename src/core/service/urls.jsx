@@ -15,6 +15,7 @@ export const ABOUT_BRAND_BRAND_SUPPORT_URL = `${SYSTEM_URL}/${_ABOUT_BRAND_URL}/
 
 // for-business
 export const _FOR_BUSINESS_URL = 'for-business'
+export const __STATEMENT_APPLICATION_URL = 'submit-application'
 export const APPLICATION_URL = `${SYSTEM_URL}/${_FOR_BUSINESS_URL}/submit-application`
 export const FOR_BUSINESS__CHILD_URL = `${_FOR_BUSINESS_URL}/:path`
 

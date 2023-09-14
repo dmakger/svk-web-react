@@ -18,10 +18,14 @@
     width: 200px;
   }
 
-  .description {
-    font-family: $f-book;
-    font-size: $fs-24;
-    color: $white;
-    margin-top: 15px;
+  .text {
+    padding: 10px 0;
+
+    .description {
+      font-family: $f-book;
+      font-size: $fs-24;
+      color: $white;
+      margin-top: 15px;
+    }
   }
 }
