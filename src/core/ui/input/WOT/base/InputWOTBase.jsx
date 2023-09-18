@@ -1,18 +1,21 @@
-import React from 'react';
-import InputWTBase from '../../WT/base/InputWTBase';
-import cl from './_InputWOTBase.module.scss'
-import Text24Bk from '../../../text/24/Text24Bk'
+import React, {useState} from 'react';
+import cl from './_InputWOTBase.module.scss';
 
-const InputWOTBase = ({defaultValue, placeholder, title, type, other, className,  ...props}) => {
+const InputWOTBase = ({type, data, className, ...props}) => {
+    let _defaultValue = data.defaultValue;
+    if (_defaultValue === undefined) {
+        _defaultValue = ''
+    }
+    const [value, setValue] = useState(_defaultValue)
+    const handleChange = (event) => {
+        setValue(event.target.value);
+    };
+
     return (
-        <div className={`${className} ${cl.block}`} {...props}>
-            <Text24Bk className={cl.title}>{title}</Text24Bk>
-            <InputWTBase placeholder={placeholder} 
-                        defaultValue={defaultValue} 
-                        className={cl.input}
-                        type={type}
-                        {...other} />
-        </div>
+        <input className={`${cl.input} ${className}`}
+               onChange={handleChange}
+               type={type}
+               value={value} {...data} {...props} />
     );
 };
 

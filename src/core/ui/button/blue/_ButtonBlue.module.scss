@@ -1,0 +1,18 @@
+@import "src/core/scss/vars";
+
+.button {
+  transition: all .2s;
+  padding: 25px 40px;
+  background-color: $blue;
+  border-radius: 10px;
+  //font-family: $f-bold;
+  //font-size: $fs-24;
+
+  &:hover {
+    background-color: $white;
+
+    .title {
+      color: $black;
+    }
+  }
+}

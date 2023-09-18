@@ -1,0 +1,10 @@
+@import "src/core/scss/vars";
+
+
+.content {
+  p {
+    font-family: $f-book;
+    font-size: $fs-20;
+    color: $white;
+  }
+}
