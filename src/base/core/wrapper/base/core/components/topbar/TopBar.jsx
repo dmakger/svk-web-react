@@ -8,9 +8,11 @@ import TopBarMenu from './core/components/menu/TopBarMenu';
 const TopBar = () => {
 	return (
 		<header className={cl.header}>
-			<div className={cl.content}>
-				<LogoH />
-				<TopBarMenu />
+			<div className={cl.wrapper}>
+				<div className={cl.content}>
+					<LogoH />
+					<TopBarMenu />
+				</div>
 			</div>
 		</header>
 	);

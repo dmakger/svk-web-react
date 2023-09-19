@@ -37,6 +37,13 @@
 	font-display: swap;
 }
 
+@font-face {
+	font-family: "RussoOne";
+	src: url("core/static/font/RussoOne/RussoOne-Regular.ttf");
+	font-display: swap;
+}
+
+
 
 * {
 	margin: 0;

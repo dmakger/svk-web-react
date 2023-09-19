@@ -5,10 +5,13 @@ import BrandPartnerArticleItemAuto from '../item/auto/BrandPartnerArticleItemAut
 import BrandPartnerArticleItemH from '../item/h/BrandPartnerArticleItemH';
 import { getData, getIndexMain } from './core/service/architecture';
 import Loading from '../../../../../../../core/ui/loading/Loading';
+import BrandPartnerArticleEmptyList from './core/components/BrandPartnerArticleEmptyList';
 
 const BrandPartnerArticleList = ({path, className, ...props}) => {
     const [main, setMain] = useState(null);
     const [data, setData] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
+    // const [data, isEmpy] = useState([]);
     useEffect(() => {
         if (path === null || path === undefined)
             return 
@@ -22,8 +25,15 @@ const BrandPartnerArticleList = ({path, className, ...props}) => {
                 setMain(response.results.splice(index, 1)[0])
                 setData(getData(response.results))
             }
+            setIsLoading(true)
         })
     }, [path])
+
+    if (isLoading && data.length === 0) {
+        return (
+            <BrandPartnerArticleEmptyList />
+        )
+    }
 
 
     return (

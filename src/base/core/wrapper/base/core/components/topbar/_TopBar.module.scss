@@ -1,18 +1,29 @@
 @import '../../../../../../../core/scss/mixins/media';
+@import '../../../../../../../core/scss/vars';
 
 .header {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	padding: 40px 10px;
-	// position: fixed;
+	height: 120px;
 
-	.content {
-		max-width: $elg-desktop-width;
-		display: flex;
+	.wrapper {
+		position: fixed;
+		z-index: 100;
+		backdrop-filter: blur(16px);
+		background-color: rgba($blue-dark-1, 0.2);
+		padding-top: 20px;
+		padding-bottom: 20px;
 		width: 100%;
-		justify-content: space-between;
-		align-items: center;
+
+		.content {
+			max-width: $elg-desktop-width;
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 auto;
+		}
 	}
 }
 

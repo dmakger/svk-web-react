@@ -50,7 +50,7 @@ const SOCIAL_NETWORK = {
 const ROW_PACKAGE_STANDARD = {
     type: CHECKBOX_TYPE,
     data: {
-        title: 'Стандартный',
+        title: 'Хочу интервью',
         isActive: false,
     }
 }
@@ -58,7 +58,7 @@ const ROW_PACKAGE_STANDARD = {
 const ROW_PACKAGE_ADVANCED = {
     type: CHECKBOX_TYPE,
     data: {
-        title: 'Расширенный',
+        title: 'Хочу лицензию',
         isActive: false,
     }
 }
@@ -95,6 +95,7 @@ const SUBMIT_BUTTON = {
     type: BUTTON_TYPE,
     data: {
         title: 'Подать заявку',
+        type: 'submit'
     }
 }
 

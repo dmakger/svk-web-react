@@ -2,13 +2,19 @@
 
 .link {
 	display: flex;
+	align-items: center;
 	padding: 10px 22px 10px 20px;
 	border-radius: 10px;
 	transition: all .2s;
 
+	.logo {
+		margin-right: 10px;
+	}
+
 	.title {
 		text-transform: uppercase;
 		color: $white;
+		font-family: $f-logo;
 	}
 
 	&:hover {
