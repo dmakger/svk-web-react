@@ -1,21 +1,19 @@
 @import "src/core/scss/vars";
 
 
-.content {
-  a {
-    font-family: $f-book;
-    font-size: $fs-20;
-    color: $white;
-    border-bottom: 1px dashed $white;
-    transition: all .3s;
-    padding-bottom: 2px;
-    width: fit-content;
-    cursor: pointer;
+.content a, .link {
+  font-family: $f-book;
+  font-size: $fs-20;
+  color: $white;
+  border-bottom: 1px dashed $white;
+  transition: all .3s;
+  padding-bottom: 2px;
+  width: fit-content;
+  cursor: pointer;
 
-    &:hover {
-      color: $blue;
-      border-color: $blue;
-      border-bottom: 1px solid;
-    }
+  &:hover {
+    color: $blue;
+    border-color: $blue;
+    border-bottom: 1px solid;
   }
 }
