@@ -40,7 +40,6 @@ export async function request(method, url, body, headers) {
 	if (headers !== undefined) {
 		data.headers = headers
 	}
-	console.log(data)
 	const res = await fetch(url, data)
 	if (res.ok) {
 		return await res.json();

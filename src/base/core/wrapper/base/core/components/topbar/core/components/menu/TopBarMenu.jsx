@@ -10,13 +10,14 @@ const TopBarMenu = () => {
 	const [is1200, setIs1200] = useState(false);
 
 	return (
-		<>
-			{is1200
-				? <TopBarMenuBurgerList menuData={menuData} />
-				: <TopBarMenuList menuData={menuData} />
-			}
-			<Size width={1200} set={setIs1200} />
-		</>
+		<TopBarMenuList menuData={menuData} />
+		// <>
+		// 	{is1200
+		// 		? <TopBarMenuBurgerList menuData={menuData} />
+		// 		: <TopBarMenuList menuData={menuData} />
+		// 	}
+		// 	<Size width={1200} set={setIs1200} />
+		// </>
 	);
 };
 

@@ -33,16 +33,12 @@ export const getData = async (data) => {
     }
     try {
         const clientData = await createClientPOST(getClientData(data));
-        console.log(clientData)
-
         result.data = await submitApplicationPOST(
             getServicesPackageData(data, clientData.id)
         )
-        console.log(result)
 
     } catch (error) {
         result.hasError = true
-    } finally {
-        return result;
     }
+    return result;
 }

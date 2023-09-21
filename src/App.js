@@ -29,7 +29,6 @@ function App() {
                         <Outlet/>
                     </SystemWrapper>
                 }>
-                    {/*<Route path={ABOUT_BRAND__ABOUT_US_URL} element={<SystemPage/>}/>*/}
                     {routeSystemElements.map((route, index) => (
                         <Route key={index} path={route.path} element={<route.element />} />
                     ))}
