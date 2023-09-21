@@ -21,7 +21,7 @@ export const getServicesPackageData = (data, client_id) => {
         result.services_package.push(1)
     }
     if (data.license === 'on') {
-        result.services_package.push(2)
+        result.services_package.push(4)
     }
     return result
 }
