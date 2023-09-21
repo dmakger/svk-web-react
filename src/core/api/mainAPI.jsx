@@ -5,7 +5,7 @@ export const URL_API = `${GLOBAL_URL}/api`;
 export const HEADERS = {
 	'Content-Type': 'application/json',
 	// 'Content-Type': 'multipart/form-data',
-	'Accept': 'application/json',
+	'Accept': '*/*',
 }
 
 // Получение заголовков для запросов
@@ -40,6 +40,7 @@ export async function request(method, url, body, headers) {
 	if (headers !== undefined) {
 		data.headers = headers
 	}
+	console.log(data)
 	const res = await fetch(url, data)
 	if (res.ok) {
 		return await res.json();

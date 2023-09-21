@@ -1,16 +1,14 @@
 @import "src/core/scss/vars";
 
 
-.content {
-    h2 {
-        font-family: $f-book;
-        font-size: $fs-48;
-        padding-top: 28px;
-        margin-bottom: 32px;
-        border-top: 1px solid $blue-dark-3;
+.content h2, .h2 {
+    font-family: $f-book;
+    font-size: $fs-48;
+    padding-top: 28px;
+    margin-bottom: 32px;
+    border-top: 1px solid $blue-dark-3;
 
-        &:not(:first-child) {
-            margin-top: 65px;
-        }
+    &:not(:first-child) {
+        margin-top: 65px;
     }
 }

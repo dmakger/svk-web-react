@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import cl from './_InputWOTBase.module.scss';
 
 const InputWOTBase = ({type, data, className, ...props}) => {
-    let _defaultValue = data.defaultValue;
+    let _defaultValue = data.value;
     if (_defaultValue === undefined) {
         _defaultValue = ''
     }

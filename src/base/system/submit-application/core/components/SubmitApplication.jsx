@@ -6,9 +6,7 @@ import SubmitApplicationForm from './core/components/form/SubmitApplicationForm'
 const SubmitApplication = () => {
     return (
         <div>
-            <p className={clH2.content}>
-                <h2>Заполнение заявки</h2>
-            </p>
+            <h2 className={clH2.h2}>Заполнение заявки</h2>
             <SubmitApplicationForm className={cl.form}/>
         </div>
     );

@@ -1,0 +1,18 @@
+.item {
+  position: relative;
+
+  .image {
+    position: absolute;
+  }
+
+  .hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; /* Чтобы избежать взаимодействия с невидимым элементом */
+  }
+
+  .visible {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+}

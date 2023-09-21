@@ -6,6 +6,7 @@ const NAME_BUSINESS = {
         required: true,
         title: 'Название вашего бизнес-проекта',
         placeholder: 'Сделано в Королёве',
+        name: 'nameBusiness',
     }
 }
 
@@ -14,7 +15,8 @@ const FIO = {
     data: {
         required: true,
         title: 'Как к вам обращаться',
-        placeholder: 'Гагарин Юрий Алексеевич',
+        placeholder: 'Королёв Сергей Павлович',
+        name: 'username',
     }
 }
 
@@ -22,10 +24,11 @@ const PHONE = {
     type: TEL_TYPE,
     data: {
         required: true,
-        pattern: '[0-9]{1} ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{3}',
+        // pattern: '[0-9]{1} ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{3}',
         maxLength: 15,
         title: 'Номер телефона',
         placeholder: '8 (999) 999-99-99',
+        name: 'phone',
     }
 }
 
@@ -34,7 +37,8 @@ const EMAIL = {
     data: {
         title: 'Email',
         placeholder: 'kolev@mail.ru',
-        required: true
+        required: true,
+        name: 'email',
     }
 }
 
@@ -43,7 +47,8 @@ const SOCIAL_NETWORK = {
     data: {
         title: 'Телеграм или Вконтакте (абсолютная ссылка)',
         placeholder: 'vk.com/sdelano_v_korolyove',
-        required: true
+        required: true,
+        name: 'communication',
     }
 }
 
@@ -52,6 +57,7 @@ const ROW_PACKAGE_STANDARD = {
     data: {
         title: 'Хочу интервью',
         isActive: false,
+        name: 'interview',
     }
 }
 
@@ -60,13 +66,15 @@ const ROW_PACKAGE_ADVANCED = {
     data: {
         title: 'Хочу лицензию',
         isActive: false,
+        name: 'license',
     }
 }
 
 const ROW_PACKAGE = {
     type: ROW_TYPE,
     data: {
-        title: '<p>Выберите пакеты <a>(существующие пакеты)</a></p>',
+        // title: '<p>Выберите пакеты <a>(существующие пакеты)</a></p>',
+        title: 'Выберите пакеты',
         list: [
             ROW_PACKAGE_STANDARD,
             ROW_PACKAGE_ADVANCED
@@ -80,6 +88,7 @@ const COMMENTS = {
         required: true,
         title: 'Комментарий',
         placeholder: 'Раскажите о вашем бренде',
+        name: 'comment',
     }
 }
 
