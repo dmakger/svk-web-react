@@ -1,5 +1,5 @@
 export const LOCAL_URL = 'http://127.0.0.1:8000';
-export const GLOBAL_URL = 'http://api.sdelanovkorolyove.ru';
+export const GLOBAL_URL = 'https://api.sdelanovkorolyove.ru';
 export const URL_API = `${GLOBAL_URL}/api`;
 
 export const HEADERS = {
