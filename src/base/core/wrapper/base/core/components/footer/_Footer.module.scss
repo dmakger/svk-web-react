@@ -1,18 +1,25 @@
 @import '../../../../../../../core/scss/vars';
 
 .footer {
-	background-color: $black;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 75px 0 120px;
+	.main {
+		padding: 75px 20px 60px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: $black;
+		.logo {
+			width: 176px;
+			height: 176px;
+		}
 
-	.list {
-		margin-top: 100px;
-	}
+		.list {
+			margin-top: 30px;
+		}
 
-	.social {
-		margin-top: 40px;
-		margin-left: -60px;
+		.social {
+			margin-top: 40px;
+			margin-right: 40px;
+		}
 	}
 }

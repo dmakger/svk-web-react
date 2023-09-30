@@ -25,7 +25,7 @@ const getNavigationList = (data) => {
 		return data
 
 	const result = [{
-		title: 'Навигация',
+		title: 'Главное',
 		path: null,
 		pages: []
 	}]

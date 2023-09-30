@@ -16,7 +16,7 @@ const MainPage = () => {
 				<div className={cl.right}>
 					<Text64B className={cl.title}>СДЕЛАНО В КОРОЛËВЕ</Text64B>
 					<Text32M className={cl.description}>Онлайн-платформа продвижения локальных предпринимателей Подмосковья</Text32M>
-					<LinkBlue className={cl.button} to={APPLICATION_URL} title='Стать частью команды' />
+					<LinkBlue className={cl.button} to={APPLICATION_URL} title='Стать партнёром' />
 				</div>
 			</div>
 

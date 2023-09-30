@@ -1,11 +1,35 @@
 @import '../../../../../../../../../../../../../../../../../../core/scss/vars';
 
-.title {
-	text-transform: uppercase;
-	cursor: pointer;
+.block {
+	display: flex;
+	padding: 10px 15px 8px 15px;
+	border-radius: 10px;
+	background: $blue-dark-2;
 	transition: all .2s;
+	border: 2px solid $blue-dark-2;
 
 	&:hover {
-		color: $black-light-4;
+		background: $blue-dark-3;
+	}
+
+	.title {
+		text-transform: uppercase;
+		text-align: center;
+		cursor: pointer;
+		transition: all .2s;
+		white-space: nowrap;
+	}
+}
+
+.active {
+	border-color: $blue;
+
+	&:hover {
+		background: $white;
+		border-color: $white;
+
+		.title {
+			color: $blue-dark-2;
+		}
 	}
 }

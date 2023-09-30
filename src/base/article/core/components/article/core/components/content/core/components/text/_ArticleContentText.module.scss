@@ -20,9 +20,18 @@
     }
     p, li {
         font-family: $f-book;
-        font-size: $fs-24;
+        font-size: $fs-24 !important;
         line-height: 35px;
         margin-bottom: 18px;
+        color: $gray-2;
+    }
+    a {
+        font-size: $fs-24 !important;
+    }
+
+    strong {
+        font-family: $f-bold;
+        font-weight: 100;
     }
 
     ol {
@@ -33,6 +42,7 @@
     img {
         width: 100% !important;
         height: 100% !important;
+        border-radius: 20px;
         object-fit: cover;
         margin-top: 24px;
     }

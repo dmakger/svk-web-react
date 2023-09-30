@@ -1,14 +1,28 @@
 import React from 'react';
 import cl from './_ArticleContentTocItem.module.scss';
-import { classes } from '../../../../../../../../../../../../../../core/service/classes';
+import {cls} from '../../../../../../../../../../../../../../core/service/cls';
 
-const ArticleContentTocItem = ({title, active, className, classNameItem, ...props}) => {
+
+const ArticleContentTocItem = ({ index, activeHeadingIndex, title, className, classNameItem, onItemClick, isScrollingInProgress, ...props }) => {
+    const isActive = index === activeHeadingIndex;
+
+    const handleItemClick = () => {
+        if (!isScrollingInProgress) {
+            setTimeout(() => {
+                onItemClick(index);
+            }, 1000);
+            const headingOffset = document.querySelectorAll("h2")[index].offsetTop - 120;
+            window.scrollTo({ top: headingOffset, behavior: "smooth" });
+        }
+    };
 
     return (
-        <div className={classes(className, cl.item, active === title ? cl.active : '')}>
+        <div
+            className={cls(className, cl.item, isActive ? cl.active : '')}
+            onClick={handleItemClick}
+        >
             <div className={cl.block} />
-            <p className={classes(cl.title, classNameItem)} dangerouslySetInnerHTML={{__html: title}} {...props}/>
-            {/*<Text20M className={classes(cl.title, classNameItem)} >{title}</Text20M>*/}
+            <p className={cls(cl.title, classNameItem)} dangerouslySetInnerHTML={{ __html: title }} {...props} />
         </div>
     );
 };

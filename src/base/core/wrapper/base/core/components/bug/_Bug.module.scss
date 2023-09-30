@@ -1,0 +1,24 @@
+@import "src/core/scss/vars";
+
+.block {
+  display: flex;
+  transition: all .2s;
+
+  .content {
+    background-color: $blue;
+    padding: 20px;
+    border-radius: 0 20px 0 0;
+  }
+
+  .button {
+    margin-top: auto;
+  }
+
+  .form {
+
+  }
+}
+
+.active {
+  left: 0;
+}

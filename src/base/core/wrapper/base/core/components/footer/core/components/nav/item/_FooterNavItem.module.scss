@@ -16,13 +16,13 @@
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-}
 
-.item {
-	transition: all .2s;
-	width: auto;
+	.item {
+		transition: all .2s;
+		width: auto;
 
-	&:hover {
-		color: $blue !important;
+		&:hover {
+			color: $blue !important;
+		}
 	}
 }

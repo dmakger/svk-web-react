@@ -1,0 +1,17 @@
+@import "src/core/scss/vars";
+
+.button {
+  padding: 10px 10px 6px;
+  border-radius: 0 10px 10px 0;
+  background-color: $blue;
+  transition: all .2s;
+
+  &:hover {
+    padding-left: 20px;
+  }
+
+  .image {
+    width: 24px;
+    height: 24px;
+  }
+}

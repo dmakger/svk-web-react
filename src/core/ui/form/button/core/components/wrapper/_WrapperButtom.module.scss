@@ -1,0 +1,15 @@
+@import "src/core/scss/vars";
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.small {
+  padding: 15px 20px !important;
+}
+
+.title {
+  font-size: $fs-16 !important;
+}

@@ -13,12 +13,12 @@ const FooterSocial = ({className, ...props}) => {
 
     return (
         <div className={`${cl.list} ${className}`} {...props}>
-            <FooterSocialItem defaultSVG={vkDefaultSVG}
-                              activeSVG={vkActiveSVG}
-                              alt={TG_TO} to={TG_TO}/>
             <FooterSocialItem defaultSVG={tgDefaultSVG}
                               activeSVG={tgActiveSVG}
                               alt={VK_TO} to={VK_TO}/>
+            <FooterSocialItem defaultSVG={vkDefaultSVG}
+                              activeSVG={vkActiveSVG}
+                              alt={TG_TO} to={TG_TO}/>
         </div>
     );
 };

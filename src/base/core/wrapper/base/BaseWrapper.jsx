@@ -7,6 +7,7 @@ import TopBar from './core/components/topbar/TopBar';
 import Footer from './core/components/footer/Footer';
 import {fetchTOC} from '../../../../core/reducer/actions';
 import ApplicationLink from './core/components/application/ApplicationLink';
+import Bug from "./core/components/bug/Bug";
 
 const BaseWrapper = ({children}) => {
     const dispatch = useDispatch();
@@ -20,6 +21,7 @@ const BaseWrapper = ({children}) => {
             <main className={cl.wrapper}>
                 <Routes>{children}</Routes>
             </main>
+            <Bug className={cl.bug} />
             <ApplicationLink className={cl.application}/>
             <Footer/>
         </>

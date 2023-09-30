@@ -1,9 +1,9 @@
 import React, {useRef, useState} from 'react';
 import cl from './_SubmitApplicationForm.module.scss';
 import {formData} from './core/service/formData'
-import FormItemAuto from "./core/components/auto/FormItemAuto";
+import FormItemAuto from "../../../../../../../../core/ui/form/auto/FormItemAuto";
 import {getData} from "./core/service/service";
-import FormStatus from './core/components/status/FormStatus';
+import FormStatus from '../../../../../../../../core/ui/form/status/FormStatus';
 
 const SubmitApplicationForm = ({className, ...props}) => {
     const formRef = useRef(null)
@@ -39,10 +39,12 @@ const SubmitApplicationForm = ({className, ...props}) => {
     return (
         <form ref={formRef} className={`${className} ${cl.form}`} {...props} onSubmit={e => handleOnSubmit(e)}>
             {formData.map((it, index) => (
-                <FormItemAuto key={index} type={it.type} data={it.data} />
+                <FormItemAuto key={index} other={it.other} type={it.type} data={it.data} />
             ))}
             <FormStatus isSent={isSent} 
                         hasError={hasError}
+                        titleSuccess={'Заявка успешно отправлена'}
+                        titleError={'Внимательно проверьте форму'}
                         className={cl.status} />
         </form>
     );

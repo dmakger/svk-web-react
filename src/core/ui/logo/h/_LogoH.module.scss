@@ -2,14 +2,11 @@
 
 .link {
 	display: flex;
+	gap: 15px;
 	align-items: center;
 	padding: 10px 22px 10px 20px;
 	border-radius: 10px;
 	transition: all .2s;
-
-	.logo {
-		margin-right: 10px;
-	}
 
 	.title {
 		text-transform: uppercase;
@@ -21,10 +18,11 @@
 		background-color: $white;
 
 		.title {
-			background: $blue-to-pred;
-			background-clip: text;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+			color: black;
+			//background: $blue-to-pred;
+			//background-clip: text;
+			//-webkit-background-clip: text;
+			//-webkit-text-fill-color: transparent;
 		}
 	}
 }

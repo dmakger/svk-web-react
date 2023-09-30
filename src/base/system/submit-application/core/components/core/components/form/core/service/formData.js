@@ -1,7 +1,19 @@
-import {CHECKBOX_TYPE, ROW_TYPE, TEXT_TYPE, TEL_TYPE, EMAIL_TYPE, BUTTON_TYPE} from "./typeFormData"
+import {
+    CHECKBOX_TYPE,
+    ROW_TYPE,
+    TEXT_TYPE,
+    TEL_TYPE,
+    EMAIL_TYPE,
+    BUTTON_TYPE,
+    TEXTAREA_TYPE, BLUE_BUTTON_COLOR
+} from "../../../../../../../../../../core/ui/form/typeFormData"
+import {LARGE_SIZE} from "../../../../../../../../../../core/ui/form/sizeFormData";
 
 const NAME_BUSINESS = {
     type: TEXT_TYPE,
+    other: {
+        size: LARGE_SIZE,
+    },
     data: {
         required: true,
         title: 'Название вашего бизнес-проекта',
@@ -12,6 +24,9 @@ const NAME_BUSINESS = {
 
 const FIO = {
     type: TEXT_TYPE,
+    other: {
+        size: LARGE_SIZE,
+    },
     data: {
         required: true,
         title: 'Как к вам обращаться',
@@ -22,6 +37,9 @@ const FIO = {
 
 const PHONE = {
     type: TEL_TYPE,
+    other: {
+        size: LARGE_SIZE,
+    },
     data: {
         required: true,
         // pattern: '[0-9]{1} ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{3}',
@@ -34,6 +52,9 @@ const PHONE = {
 
 const EMAIL = {
     type: EMAIL_TYPE,
+    other: {
+        size: LARGE_SIZE,
+    },
     data: {
         title: 'Email',
         placeholder: 'kolev@mail.ru',
@@ -44,8 +65,11 @@ const EMAIL = {
 
 const SOCIAL_NETWORK = {
     type: TEXT_TYPE,
+    other: {
+        size: LARGE_SIZE,
+    },
     data: {
-        title: 'Телеграм или Вконтакте (абсолютная ссылка)',
+        title: 'Соцсеть для связи',
         placeholder: 'vk.com/sdelano_v_korolyove',
         required: true,
         name: 'communication',
@@ -54,6 +78,9 @@ const SOCIAL_NETWORK = {
 
 const ROW_PACKAGE_STANDARD = {
     type: CHECKBOX_TYPE,
+    other: {
+        size: LARGE_SIZE,
+    },
     data: {
         title: 'Хочу интервью',
         isActive: false,
@@ -63,6 +90,9 @@ const ROW_PACKAGE_STANDARD = {
 
 const ROW_PACKAGE_ADVANCED = {
     type: CHECKBOX_TYPE,
+    other: {
+        size: LARGE_SIZE,
+    },
     data: {
         title: 'Хочу лицензию',
         isActive: false,
@@ -72,9 +102,12 @@ const ROW_PACKAGE_ADVANCED = {
 
 const ROW_PACKAGE = {
     type: ROW_TYPE,
+    other: {
+        size: LARGE_SIZE,
+    },
     data: {
         // title: '<p>Выберите пакеты <a>(существующие пакеты)</a></p>',
-        title: 'Выберите пакеты',
+        title: 'Выберите опции партнёрства:',
         list: [
             ROW_PACKAGE_STANDARD,
             ROW_PACKAGE_ADVANCED
@@ -83,19 +116,25 @@ const ROW_PACKAGE = {
 }
 
 const COMMENTS = {
-    type: TEXT_TYPE,
+    type: TEXTAREA_TYPE,
+    other: {
+        size: LARGE_SIZE,
+    },
     data: {
         required: true,
         title: 'Комментарий',
-        placeholder: 'Раскажите о вашем бренде',
+        placeholder: 'Задайте вопрос',
         name: 'comment',
     }
 }
 
 const APPROVAL = {
     type: CHECKBOX_TYPE,
+    other: {
+        size: LARGE_SIZE,
+    },
     data: {
-        title: 'Я даю своё согласие на обработку моих персональных данных, в соответствии с ФЗ от 27.07.2006 года №152-ФЗ«О персональных данных», на условиях и для целей, определенных Политикой конфиденциальности.',
+        title: 'Я даю своё согласие на обработку моих персональных данных в соответствии с ФЗ от 27.07.2006 года №152-ФЗ«О персональных данных», на условиях и для целей, определенных Политикой конфиденциальности.',
         isActive: false,
         name: 'approval',
     }
@@ -103,6 +142,10 @@ const APPROVAL = {
 
 const SUBMIT_BUTTON = {
     type: BUTTON_TYPE,
+    other: {
+        size: LARGE_SIZE,
+        color: BLUE_BUTTON_COLOR,
+    },
     data: {
         title: 'Подать заявку',
         type: 'submit'

@@ -1,0 +1,9 @@
+@import "src/core/scss/vars";
+
+.status {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px !important;
+}

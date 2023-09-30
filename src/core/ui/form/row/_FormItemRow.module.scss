@@ -1,0 +1,15 @@
+@import "../../../scss/vars";
+
+.block {
+  margin-bottom: 20px;
+
+  .title {
+    font-size: $fs-24 !important;
+    margin-bottom: 15px;
+  }
+
+  .row {
+    display: flex;
+    gap: 20px;
+  }
+}
