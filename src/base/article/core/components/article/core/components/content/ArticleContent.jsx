@@ -11,6 +11,7 @@ const ArticleContent = ({image, content, className, ...props}) => {
             <ArticleContentText
                 image={image}
                 content={content}
+                className={cl.text}
                 setActiveHeadingIndex={setActiveHeadingIndex}
             />
             <ArticleContentToc

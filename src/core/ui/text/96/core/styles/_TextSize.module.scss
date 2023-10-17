@@ -1,5 +1,18 @@
 @import "../../../../../scss/vars";
+@import "../../../../../scss/mixins/media";
 
 .text {
 	font-size: $fs-96;
+}
+
+@include lg-desktop {
+	.text {
+		font-size: $fs-64;
+	}
+}
+
+@include sm-tablets {
+	.text {
+		font-size: $fs-48;
+	}
 }
