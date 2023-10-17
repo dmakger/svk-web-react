@@ -1,0 +1,21 @@
+@import "src/core/scss/mixins/media";
+
+.list {
+  position: fixed;
+  left: -500px;
+  top: 131.25px;
+  transition: all .2s;
+  min-width: 212px;
+}
+
+.visible {
+  left: 0;
+}
+
+/* Small mobile devices | 480px or less */
+@include sm-mobile {
+  .list {
+    width: 100vw;
+    min-width: 0;
+  }
+}

@@ -1,9 +1,10 @@
-@import '../../../../../../../../../../core/scss/vars';
+@import 'src/core/scss/vars';
+@import 'src/core/scss/mixins/media';
 
 .block {
     background-color: $blue-dark-2;
     border-radius: 20px;
-    padding: 30px;
+    padding: 20px;
     border: 2px solid $blue-dark-2;
     transition: all .2s;
 
@@ -21,5 +22,13 @@
         margin-right: 60px;
         display: flex;
         flex-direction: column;
+    }
+}
+
+//
+@include sm-mobile {
+    .block {
+        //padding: 20px 12px;
+        //border-radius: 18px;
     }
 }

@@ -1,4 +1,5 @@
-@import '../../../../../../core/scss/vars';
+@import 'src/core/scss/vars';
+@import 'src/core/scss/mixins/media';
 
 .block {
     display: flex;
@@ -6,14 +7,13 @@
     justify-content: center;
     align-items: center;
 
-    padding: 40px;
-    padding-bottom: 35px;
+    padding: 40px 40px 35px;
     background-color: $blue-dark-2;
     border-radius: 20px;
     transition: all 0.2s;
 
     overflow: hidden;
-    height: 370px;
+    max-height: 370px;
     max-width: 420px;
     width: 100%;
 
@@ -36,6 +36,7 @@
 
     .title {
         margin-top: 10px;
+        text-align: center;
     }
 
     &:hover {
@@ -44,5 +45,24 @@
         .image {
             filter: grayscale(0%);
         }
+    }
+}
+
+/* Small mobile devices | 768px or less */
+@include sm-tablets {
+    .block {
+        padding: 20px 20px 15px;
+        max-height: none;
+
+        .image {
+            width: 100%;
+        }
+    }
+}
+
+/* Small mobile devices | 480px or less */
+@include sm-mobile {
+    .title {
+        font-size: 20px !important;
     }
 }

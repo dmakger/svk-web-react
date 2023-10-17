@@ -1,7 +1,9 @@
-@import '../../../../../../core/scss/vars';
+@import 'src/core/scss/vars';
+@import 'src/core/scss/mixins/media';
 
 .header {
     display: flex;
+    gap: 50px;
 
     .image {
         height: 160px;
@@ -12,7 +14,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 50px;
 
         .description {
             font-family: $f-medium;
@@ -22,6 +23,29 @@
 
         .link {
             margin-top: 5px;
+        }
+    }
+}
+
+@include md-desktop {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        .image {
+            width: 160px;
+        }
+
+        .title {
+            font-size: 48px;
+        }
+
+        .title, .description, .link {
+            text-align: center;
+        }
+        .link {
+            margin: 0 auto;
         }
     }
 }

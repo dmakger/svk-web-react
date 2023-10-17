@@ -1,19 +1,22 @@
-@import '../../../../../../../../core/scss/vars';
+@import 'src/core/scss/vars';
+@import 'src/core/scss/mixins/media';
 
 .block {
     display: flex;
+    gap: 60px;
     width: 100%;
     height: auto;
 
     .image {
         height: 330px;
+        object-fit: cover;
         border-radius: 20px;
         display: flex;
     }
 
 
     .content {
-        margin-left: 60px;
+        //margin-left: 60px;
         display: flex;
         flex-direction: column;
         flex-grow: 1;
@@ -32,7 +35,7 @@
                 font-size: $fs-24;
                 overflow: hidden;
                 display: -webkit-box;
-                -webkit-line-clamp: 3;
+                -webkit-line-clamp: 2;
                 -webkit-box-orient: vertical;
             }
 
@@ -43,5 +46,41 @@
             margin-bottom: 30px;
             margin-top: 20px;
         }
+    }
+}
+
+/* Large devices | 1200px or less */
+@include lg-desktop {
+    .block {
+        flex-direction: column;
+        gap: 20px;
+
+        .content {
+            .tags {
+                margin-top: 0;
+            }
+
+            .tag {
+                margin-right: auto;
+            }
+
+            .text {
+                margin-top: 10px;
+
+                .description {
+                    display: none;
+                }
+            }
+            .date {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}
+
+/* Large devices | 480px or less */
+@include sm-mobile {
+    .title {
+        font-size: 28px !important;
     }
 }

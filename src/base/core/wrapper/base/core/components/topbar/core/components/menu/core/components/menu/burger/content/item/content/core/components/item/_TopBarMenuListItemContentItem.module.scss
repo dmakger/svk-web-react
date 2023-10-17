@@ -1,0 +1,30 @@
+@import 'src/core/scss/vars';
+
+.block {
+	display: flex;
+	transition: all .2s;
+
+	.line {
+		background-color: $black-light-4;
+		width: 2px;
+		transition: all .2s;
+	}
+
+	.title {
+		padding: 10px 12px;
+		white-space: nowrap;
+		transition: all .2s;
+		width: 280px;
+		color: $gray-1;
+	}
+
+	&:hover {
+		.line {
+			background-color: $white;
+		}
+		.title {
+			color: $white;
+			font-family: $f-bold;
+		}
+	}
+}

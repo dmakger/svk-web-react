@@ -7,8 +7,8 @@ export const getIndexMain = (data) => {
     return -1;
 }
 
-export const getData = (data) => {
-    const slicedData = getSlicedData(data);
+export const getData = (data, amount=3) => {
+    const slicedData = getSlicedData(data, amount);
     const dataWI = slicedData[0];
     const dataV = slicedData[1];
 
@@ -29,23 +29,23 @@ const pushFormattedData = (formattedData, data) => {
         formattedData.push(el)
 }
 
-const getSlicedData = (data) => {
+const getSlicedData = (data, amount=3) => {
     let indexWI = 0;
     let indexV = 0;
     const dataWI = [[]];
     const dataV = [[]];
     for (let el of data) {
         if (el.preview_image === null) {
-            indexWI = pushData(dataWI, indexWI, el)
+            indexWI = pushData(dataWI, indexWI, el, amount)
         } else {
-            indexV = pushData(dataV, indexV, el)
+            indexV = pushData(dataV, indexV, el, amount)
         }
     }
     return [dataWI, dataV]
 }
 
-const pushData = (data, index, el) => {
-    if (data[index].length === 3) {
+const pushData = (data, index, el, amount=3) => {
+    if (data[index].length === amount) {
         data.push([])
         index += 1
     }

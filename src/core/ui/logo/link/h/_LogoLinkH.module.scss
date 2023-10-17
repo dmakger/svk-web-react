@@ -1,12 +1,18 @@
-@import "../../../scss/_vars.scss";
+@import "../../../../scss/vars";
 
 .link {
 	display: flex;
 	gap: 15px;
 	align-items: center;
-	padding: 10px 22px 10px 20px;
+	//padding: 10px 22px 10px 20px;
+	padding: 5px;
 	border-radius: 10px;
 	transition: all .2s;
+
+	.logo {
+		width: 300px;
+		transition: all .2s;
+	}
 
 	.title {
 		text-transform: uppercase;

@@ -1,4 +1,5 @@
 @import "src/core/scss/vars";
+@import "src/core/scss/mixins/media";
 
 .button {
   padding: 10px 10px 6px;
@@ -13,5 +14,16 @@
   .image {
     width: 24px;
     height: 24px;
+  }
+}
+
+/* Small mobile devices | 480px or less */
+@include sm-mobile {
+  .button {
+    padding: 8px 8px 4px;
+    .image {
+      width: 20px !important;
+      height: 20px !important;
+    }
   }
 }

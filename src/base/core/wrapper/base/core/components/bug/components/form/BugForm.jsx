@@ -15,11 +15,14 @@ const BugForm = ({setIsActive, className, ...props}) => {
 
         if (formRef.current) {
             setIsSent(false)
+            console.log(formRef.current)
             const formData = new FormData(formRef.current)
+            console.log(formData)
             const tempDataStorage = {}
             formData.forEach((value, key) => {
                 tempDataStorage[key] = value
             })
+            console.log(tempDataStorage)
             createRequestAboutBug(tempDataStorage).then(() => {
                 setHasError(false)
                 setIsSent(true)

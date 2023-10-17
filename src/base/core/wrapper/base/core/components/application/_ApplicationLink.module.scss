@@ -1,4 +1,5 @@
-@import '../../../../../../../core/scss/vars';
+@import 'src/core/scss/vars';
+@import 'src/core/scss/mixins/media';
 
 .text {
     padding: 15px 20px;
@@ -9,5 +10,13 @@
     &:hover {
         background-color: $white;
         color: $black;
+    }
+}
+
+/* Small mobile devices | 480px or less */
+@include sm-mobile {
+    .text {
+        padding: 10px 15px;
+        font-size: $fs-16 !important;
     }
 }

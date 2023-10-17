@@ -1,4 +1,7 @@
+@import "src/core/scss/mixins/media";
+
 .block {
+    width: 100%;
 
     .list {
         margin-top: 20px;
@@ -6,5 +9,17 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
         gap: 20px;
+    }
+}
+
+/* Large devices | 1024px or less */
+@include md-desktop {
+    .list {
+        display: flex !important;
+        flex-direction: column;
+
+        .item {
+            min-height: auto;
+        }
     }
 }

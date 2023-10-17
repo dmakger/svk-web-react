@@ -1,6 +1,6 @@
 $elg-desktop-width: 1440px;
 $lg-desktop-width: 1200px;
-$md-desktop-width: 993px;
+$md-desktop-width: 1024px;
 $sm-tablets-width: 768px;
 $sm-mobile-width: 480px;
 $extra-sm-mobile-width: 320px;
@@ -21,7 +21,7 @@ $extra-sm-mobile-width: 320px;
   }
 }
 
-/* Medium devices | 993px or less */
+/* Medium devices | 1024px or less */
 @mixin md-desktop {
   @media only screen and (max-width: #{$md-desktop-width}) {
     @content

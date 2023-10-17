@@ -1,4 +1,4 @@
-@import '../../../../../../../../../../../core/scss/vars';
+@import 'src/core/scss/vars';
 
 .block {
     display: flex;
@@ -12,13 +12,21 @@
         justify-content: space-between;
         align-items: center;
 
-        .date {
-            color: $gray-1;
-            margin-right: 10px;
+        .tag {
+            margin-right: auto;
         }
     }
 
     .title {
         margin: 20px 10px 0;
-    }    
+    }
+
+    .date {
+        color: $gray-1;
+        margin-right: 10px;
+    }
+    .bottomDate {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
 }

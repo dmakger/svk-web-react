@@ -23,7 +23,7 @@ const BrandPartnerDetailHeader = ({className, path, ...props}) => {
                 : (<>
                     <img alt={`Логотип компании`} src={`${GLOBAL_URL}/${data.logo_image}`} className={cl.image} />
                     <div className={cl.text}>
-                        <Text64M>{data.title}</Text64M>
+                        <Text64M className={cl.title}>{data.title}</Text64M>
                         <p className={cl.description} dangerouslySetInnerHTML={{__html: data.description}} />
                         <BaseLink className={cl.link} to={data.link} usNewPage={true}>Страница компании</BaseLink>
                     </div>

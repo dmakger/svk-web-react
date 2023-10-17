@@ -1,0 +1,22 @@
+@import 'src/core/scss/vars';
+
+.block {
+	display: flex;
+	transition: all .2s;
+
+	.title {
+		text-align: center;
+		cursor: pointer;
+		transition: all .2s;
+		white-space: nowrap;
+		//color: $gray-1;
+		font-size: 18px;
+	}
+
+	&:hover {
+		.title {
+			font-family: $f-bold;
+			color: $white;
+		}
+	}
+}
