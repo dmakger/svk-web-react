@@ -40,6 +40,15 @@
     }
 }
 
+@include lg-desktop {
+    .content {
+        .logo {
+            max-width: 300px;
+            max-height: 300px;
+        }
+    }
+}
+
 @include md-desktop {
     .content {
         flex-direction: column;

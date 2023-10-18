@@ -17,7 +17,7 @@
 .bug {
     position: fixed;
     z-index: 999;
-    left: -276px;
+    left: -278px;
     right: auto;
     bottom: 55px;
 }
@@ -28,4 +28,11 @@
     left: auto;
     right: 0;
     bottom: 50px;
+}
+
+@include sm-tablets {
+    .bug {
+        left: -300px;
+        top: 0;
+    }
 }

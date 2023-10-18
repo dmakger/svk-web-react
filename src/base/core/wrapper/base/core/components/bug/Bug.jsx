@@ -29,7 +29,7 @@ const Bug = ({className, ...props}) => {
     return (
         <div ref={bugRef} className={cls(className, cl.block, isActive ? cl.active : '')} {...props}>
             <div className={cl.content}>
-                <BugForm className={cl.form} setIsActive={setIsActive}/>
+                <BugForm setIsActive={setIsActive}/>
             </div>
             <BugButton className={cl.button} onClick={toggleContent} />
         </div>

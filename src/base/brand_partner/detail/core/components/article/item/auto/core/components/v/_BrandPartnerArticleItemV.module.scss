@@ -10,6 +10,7 @@
 
     .image {
         border-radius: 20px;
+        object-fit: cover;
     }
 
     .content {
@@ -49,5 +50,13 @@
     .date {
         font-size: 15px !important;
         //margin-top: 10px !important;
+    }
+}
+
+@include sm-mobile {
+    .block {
+        .image {
+            max-height: 200px;
+        }
     }
 }
