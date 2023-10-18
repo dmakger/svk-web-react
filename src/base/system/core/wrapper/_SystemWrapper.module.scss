@@ -1,3 +1,5 @@
+@import "../../../../core/scss/mixins/media";
+
 .wrapper {
   display: flex;
   gap: 50px;
@@ -5,5 +7,13 @@
 
   .toc {
     margin-top: 100px;
+  }
+}
+
+@include lg-desktop {
+  .wrapper {
+    .toc {
+      margin-top: 0;
+    }
   }
 }

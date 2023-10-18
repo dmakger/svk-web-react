@@ -1,4 +1,5 @@
 @import '../../../../../core/scss/vars';
+@import '../../../../../core/scss/mixins/media';
 
 .background {
     position: absolute;
@@ -15,4 +16,12 @@
         right: 314px;
     }
 
+}
+
+@include md-desktop {
+    .background {
+        .redBall, .purpleBall {
+            display: none;
+        }
+    }
 }

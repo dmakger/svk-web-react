@@ -1,3 +1,4 @@
+@import '../../../../../../../../../../../core/scss/mixins/media';
 @import '../../../../../../../../../../../core/scss/vars';
 
 .text {
@@ -13,5 +14,14 @@
     }
     a {
         font-size: $fs-32 !important;
+    }
+}
+
+@include md-desktop {
+
+    .text {
+        .description {
+            font-size: $fs-24;
+        }
     }
 }

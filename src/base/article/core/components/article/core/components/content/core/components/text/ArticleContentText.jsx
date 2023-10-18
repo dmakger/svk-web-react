@@ -63,7 +63,7 @@ const ArticleContentText = ({ image, content, className, setActiveHeadingIndex, 
 
     return (
         <div className={className} {...props}>
-            <ArticleImage image={image} />
+            <ArticleImage image={image} className={cl.image} />
             <p className={`${cl.content} ${clLink.content} ${clH2.content}`} dangerouslySetInnerHTML={{ __html: contentWithPrefix }} />
         </div>
     );

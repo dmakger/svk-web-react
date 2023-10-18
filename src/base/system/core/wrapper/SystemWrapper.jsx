@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import cl from './_SystemWrapper.module.scss'
 import {getTOC} from "../api/systemAPI";
-import TOCList from "./core/components/toc/list/TOCList";
 import {getFormatSystemList} from "./core/service/systemList";
 import {useParams} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import {fetchSystemPage} from "../../../../core/reducer/actions";
+import TocAuto from "./core/components/toc/auto/TocAuto";
 
 const SystemWrapper = ({children}) => {
     const { path2 } = useParams(); // Извлекаем несколько параметров из URL
@@ -27,7 +27,7 @@ const SystemWrapper = ({children}) => {
 
     return (
         <div className={cl.wrapper}>
-            <TOCList toc={toc} className={cl.toc} />
+            <TocAuto toc={toc} className={cl.toc} />
             {children}
         </div>
     );

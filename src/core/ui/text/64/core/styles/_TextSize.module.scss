@@ -1,5 +1,12 @@
 @import "../../../../../scss/vars";
+@import "../../../../../scss/mixins/media";
 
 .text {
 	font-size: $fs-64;
+}
+
+@include md-desktop {
+	.text {
+		font-size: $fs-48;
+	}
 }

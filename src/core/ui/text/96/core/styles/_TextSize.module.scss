@@ -16,3 +16,9 @@
 		font-size: $fs-48;
 	}
 }
+
+@include sm-mobile {
+	.text {
+		font-size: $fs-32;
+	}
+}

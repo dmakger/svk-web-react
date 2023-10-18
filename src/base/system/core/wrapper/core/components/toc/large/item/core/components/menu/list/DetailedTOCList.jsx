@@ -1,7 +1,7 @@
 import React from 'react';
 import cl from './_DetailedTOCList.module.scss';
 import DetailedTOCItem from "../item/DetailedTOCItem";
-import {SYSTEM_URL} from "../../../../../../../../../../../../core/service/urls";
+import {SYSTEM_URL} from "../../../../../../../../../../../../../core/service/urls";
 
 const DetailedTOCList = ({path, list, className, ...props}) => {
     return (

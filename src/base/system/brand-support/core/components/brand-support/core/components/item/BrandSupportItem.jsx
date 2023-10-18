@@ -9,7 +9,7 @@ const BrandSupportItem = ({title, description, link, image, className, ...props}
         >
             <img className={cl.image} src={image} alt={title}/>
             <div className={cl.text}>
-                <Text36M>{title}</Text36M>
+                <Text36M className={cl.title}>{title}</Text36M>
                 <p className={cl.description} dangerouslySetInnerHTML={{__html: description}} />
             </div>
         </a>

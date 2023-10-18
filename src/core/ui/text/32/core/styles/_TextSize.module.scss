@@ -1,5 +1,12 @@
 @import "../../../../../scss/vars";
+@import "../../../../../scss/mixins/media";
 
 .text {
 	font-size: $fs-32;
+}
+
+@include sm-tablets {
+	.text {
+		font-size: $fs-24;
+	}
 }

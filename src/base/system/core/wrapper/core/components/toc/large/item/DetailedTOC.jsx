@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import cl from './_DetailedTOC.module.scss'
-import Text20B from "../../../../../../../../core/ui/text/20/Text20B";
+import Text20B from "../../../../../../../../../core/ui/text/20/Text20B";
 import DetailedTOCList from "./core/components/menu/list/DetailedTOCList";
-import arrowSVG from '../../../../../../../../core/static/img/arrow-down-white-fill.svg';
+import arrowSVG from '../../../../../../../../../core/static/img/arrow-down-white-fill.svg';
 import {useSelector} from "react-redux";
 
 const DetailedTOC = ({title, list, path, className, ...props}) => {

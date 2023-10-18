@@ -1,7 +1,7 @@
 import React from 'react';
 import cl from './_DetailedTOCItem.module.scss'
 import {Link} from "react-router-dom";
-import Text20M from "../../../../../../../../../../../../core/ui/text/20/Text20M";
+import Text20M from "../../../../../../../../../../../../../core/ui/text/20/Text20M";
 import {useSelector} from "react-redux";
 
 const DetailedTOCItem = ({to, path, title, className, ...props}) => {
