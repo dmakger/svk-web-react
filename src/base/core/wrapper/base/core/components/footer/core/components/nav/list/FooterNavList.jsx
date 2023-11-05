@@ -37,7 +37,7 @@ const getNavigationList = (data) => {
 				path: nav.path,
 			})
 		} else {
-			result.push(nav)
+			result.push({...nav, path: `docs/${nav.path}`})
 		}
 	}
 	return result

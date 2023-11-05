@@ -56,8 +56,8 @@ const EMAIL = {
         size: LARGE_SIZE,
     },
     data: {
-        title: 'Email',
-        placeholder: 'kolev@mail.ru',
+        title: 'E-mail',
+        placeholder: 'made_in_korolev@vk.com',
         required: true,
         name: 'email',
     }

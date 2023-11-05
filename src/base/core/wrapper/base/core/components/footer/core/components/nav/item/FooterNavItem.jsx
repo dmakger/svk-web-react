@@ -13,7 +13,7 @@ const FooterNavItem = ({ path, title, content, className, ...props }) => {
 			<div className={cl.line}/>
 			<div className={cl.content}>
 				{content.map(it => (
-					<Link key={it.path} to={`docs/${parentURL}${it.path}`}>
+					<Link key={it.path} to={`${parentURL}${it.path}`}>
 						<Text20M className={cl.item}>{it.title}</Text20M>
 					</Link>
 				))}

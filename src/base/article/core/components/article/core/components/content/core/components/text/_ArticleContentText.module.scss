@@ -2,6 +2,8 @@
 @import 'src/core/scss/mixins/media';
 
 .content {
+    max-width: 750px;
+
     h2 {
         font-family: $f-book;
         font-size: $fs-48;

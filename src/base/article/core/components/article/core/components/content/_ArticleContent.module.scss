@@ -3,9 +3,11 @@
 .content {
     display: flex;
     margin-bottom: 100px;
+    overflow-x: hidden;
 
     .toc {
-        min-width: 280px;
+        // min-width: 280px;
+        min-width: 250px;
         margin-left: 50px;
     }
 
