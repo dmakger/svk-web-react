@@ -1,9 +1,22 @@
-.toc {
+@import "src/core/scss/vars";
+
+.wrapper {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 
     position: sticky;
     top: 150px;
     bottom: 50px;
+
+    .block {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .video {
+            border-radius: 10px;
+            border: 1px solid $blue;
+        }
+    }
 }

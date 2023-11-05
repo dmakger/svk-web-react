@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import cl from './_ArticleContentText.module.scss';
 import clLink from '../../../../../../../../../../core/scss/_link.module.scss';
 import clH2 from '../../../../../../../../../../core/scss/_h2.module.scss';
 import ArticleImage from './core/components/image/ArticleImage';
-import { getImage } from "../../../../../../../../../../../core/service/image";
+import {getImage} from "../../../../../../../../../../../core/service/image";
 
-const ArticleContentText = ({ image, content, className, setActiveHeadingIndex, ...props }) => {
+const ArticleContentText = ({image, content, className, setActiveHeadingIndex, ...props}) => {
     const [contentWithPrefix, setContentWithPrefix] = useState("");
     const [headingOffsets, setHeadingOffsets] = useState([]);
 
@@ -60,11 +60,11 @@ const ArticleContentText = ({ image, content, className, setActiveHeadingIndex, 
             window.removeEventListener("scroll", handleScroll);
         };
     }, [headingOffsets, setActiveHeadingIndex]);
-
     return (
         <div className={className} {...props}>
-            <ArticleImage image={image} className={cl.image} />
-            <p className={`${cl.content} ${clLink.content} ${clH2.content}`} dangerouslySetInnerHTML={{ __html: contentWithPrefix }} />
+            <ArticleImage image={image} className={cl.image}/>
+            <p className={`${cl.content} ${clLink.content} ${clH2.content}`}
+               dangerouslySetInnerHTML={{__html: contentWithPrefix}}/>
         </div>
     );
 };

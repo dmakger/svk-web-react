@@ -3,7 +3,7 @@ import cl from './_ArticleContent.module.scss';
 import ArticleContentToc from './core/components/toc/ArticleContentToc';
 import ArticleContentText from './core/components/text/ArticleContentText';
 
-const ArticleContent = ({image, content, className, ...props}) => {
+const ArticleContent = ({image, content, linkVideo, className, ...props}) => {
     const [activeHeadingIndex, setActiveHeadingIndex] = useState(0);
 
     return (
@@ -19,6 +19,7 @@ const ArticleContent = ({image, content, className, ...props}) => {
                 activeHeadingIndex={activeHeadingIndex}
                 className={cl.toc}
                 classNameItem={cl.tocItem}
+                linkVideo={linkVideo}
                 onItemClick={setActiveHeadingIndex}
             />
         </div>

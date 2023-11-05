@@ -44,12 +44,24 @@
         object-fit: cover;
         margin-top: 24px;
     }
+
+    iframe {
+        width: 100% !important;
+        height: 480px;
+        margin-top: 24px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        border: 2px solid $blue;
+    }
 }
 
 @include sm-tablets {
     .content {
         h3 {
             font-size: $fs-32;
+        }
+        iframe {
+            height: 320px;
         }
     }
 }

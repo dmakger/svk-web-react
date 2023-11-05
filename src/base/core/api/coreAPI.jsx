@@ -26,6 +26,7 @@ export async function getBrandPartnersArticleList(path, params) {
 }
 
 export async function getBrandArticle(path, params) {
+	// const url = `${CORE_URL_API}/article/${path}/${getParams(params)}`
 	const url = `${CORE_URL_API}/article/${path}/${getParams(params)}`
 	return await request('GET', url)
 }
