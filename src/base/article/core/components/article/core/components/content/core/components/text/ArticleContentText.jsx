@@ -4,8 +4,9 @@ import clLink from '../../../../../../../../../../core/scss/_link.module.scss';
 import clH2 from '../../../../../../../../../../core/scss/_h2.module.scss';
 import ArticleImage from './core/components/image/ArticleImage';
 import {getImage} from "../../../../../../../../../../../core/service/image";
+import { cls } from '../../../../../../../../../../../core/service/cls';
 
-const ArticleContentText = ({image, content, className, setActiveHeadingIndex, ...props}) => {
+const ArticleContentText = ({image, content, className, setActiveHeadingIndex, classNameText, ...props}) => {
     const [contentWithPrefix, setContentWithPrefix] = useState("");
     const [headingOffsets, setHeadingOffsets] = useState([]);
 
@@ -63,7 +64,7 @@ const ArticleContentText = ({image, content, className, setActiveHeadingIndex, .
     return (
         <div className={className} {...props}>
             <ArticleImage image={image} className={cl.image}/>
-            <p className={`${cl.content} ${clLink.content} ${clH2.content}`}
+            <p className={cls(cl.content, clLink.content, clH2.content, classNameText)}
                dangerouslySetInnerHTML={{__html: contentWithPrefix}}/>
         </div>
     );

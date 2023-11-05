@@ -5,6 +5,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {setToc} from "../../../core/reducer/tocReducer";
 import {useParams} from "react-router-dom";
 import {selectSystemPageData} from "../../../core/reducer/systemPageReducer";
+import cl from './_SystemPage.module.scss';
 
 const SystemPage = () => {
     const [article, setArticle] = useState(null);
@@ -28,7 +29,8 @@ const SystemPage = () => {
                 ? <Article title={article.title}
                            description={article.description}
                            image={article.preview_image}
-                           content={article.content} />
+                           content={article.content} 
+                           classNameText={cl.text} />
                 : <Loading />
             }
 
