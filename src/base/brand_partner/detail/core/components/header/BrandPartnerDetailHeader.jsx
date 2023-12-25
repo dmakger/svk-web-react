@@ -25,7 +25,7 @@ const BrandPartnerDetailHeader = ({className, path, ...props}) => {
                     <div className={cl.text}>
                         <Text64M className={cl.title}>{data.title}</Text64M>
                         <p className={cl.description} dangerouslySetInnerHTML={{__html: data.description}} />
-                        <BaseLink className={cl.link} to={data.link} usNewPage={true}>Страница компании</BaseLink>
+                        <BaseLink className={cl.link} to={data.link} usNewPage={true}>Сайт бренда</BaseLink>
                     </div>
                 </>)
             }

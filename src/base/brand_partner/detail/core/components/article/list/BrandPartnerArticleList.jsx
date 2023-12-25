@@ -11,6 +11,7 @@ import Size from "../../../../../../../core/service/Size";
 const BrandPartnerArticleList = ({path, className, ...props}) => {
     const [main, setMain] = useState(null);
     const [data, setData] = useState([]);
+    const [isMainLoading, setIsMainLoading] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
 
     const [is1480, setIs1480] = useState(false)
@@ -26,8 +27,11 @@ const BrandPartnerArticleList = ({path, className, ...props}) => {
                 const index = getIndexMain(response.results);
                 if (index !== -1) {
                     setMain(response.results.splice(index, 1)[0])
+                }
+                if (response.results.length > 0) {
                     setData(getData(response.results, getAmountInLine(is1480)))
                 }
+                setIsMainLoading(true)
                 setIsLoading(true)
             })
     }, [is1480, path])
@@ -47,7 +51,8 @@ const BrandPartnerArticleList = ({path, className, ...props}) => {
                                             image={main.preview_image}
                                             tags={main.tags}
                                             dateAt={main.date_at}/>
-                : <Loading/>
+                : !isMainLoading &&
+                    <Loading/>
             }
             <div className={cl.list}>
                 {data.map(it => (
